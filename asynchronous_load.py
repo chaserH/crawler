@@ -25,7 +25,7 @@ for i in range(10):
 	    print('now downloading:' + each)
 	    pic = requests.get(each)
 	    ext = re.split('[.?]', each)[-1]    #.或？分隔
-	    fp = open('/Users/max527/百度云同步盘/工作/PythonWorkplace/load/pic/' + str(j) + '.' + str(ext),'wb')
+	    fp = open('/Users/PythonWorkplace/load/pic/' + str(j) + '.' + str(ext),'wb')
 	    fp.write(pic.content)
 	    fp.close()
 	    j += 1
